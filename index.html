@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Series TV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS (luego será compilado desde SASS) -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Series y Películas</h1>
+    <p>Información obtenida desde TVMaze API</p>
+  </header>
+
+  <main class="main">
+
+    <!-- Buscador -->
+    <section class="search">
+      <form id="searchForm">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar series..."
+          aria-label="Buscar series"
+        >
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Listado de series -->
+    <section class="shows" id="shows">
+      <!-- JS inyecta aquí las tarjetas -->
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Proyecto educativo - API TVMaze</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

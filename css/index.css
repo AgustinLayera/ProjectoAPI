@@ -1,0 +1,20 @@
+/* Error: There's already a module with namespace "variables".
+ *     ,
+ * 2   | @use "base/variables";
+ *     | ===================== original @use
+ * ... |
+ * 11  | @use "layout/variables";
+ *     | ^^^^^^^^^^^^^^^^^^^^^^^ new @use
+ *     '
+ *   scss/index.scss 11:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: There's already a module with namespace \"variables\".\a     \2577 \a 2   \2502  @use \"base/variables\";\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a... \2502 \a 11  \2502  @use \"layout/variables\";\a     \2502  ^^^^^^^^^^^^^^^^^^^^^^^ new @use\a     \2575 \a   scss/index.scss 11:1  root stylesheet";
+}

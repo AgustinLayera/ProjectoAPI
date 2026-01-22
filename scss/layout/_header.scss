@@ -1,0 +1,18 @@
+@use "variables" as v;
+
+.product {
+  background-color: v.$dark-blue;
+  border: 2px solid v.$light-blue;
+}
+
+.header {
+  background-color: v.$dark-blue;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid v.$light-blue;
+
+  h1 {
+    color: v.$light-blue;
+    letter-spacing: 2px;
+  }
+}

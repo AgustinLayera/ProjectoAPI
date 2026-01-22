@@ -1,0 +1,18 @@
+// BASE
+@use "base/variables";
+@use "base/reset";
+@use "base/base";
+
+
+// LAYOUT
+@use "layout/header";
+@use "layout/footer";
+@use "layout/main";
+@use "layout/variables";
+
+
+// COMPONENTS
+@use "components/search";
+@use "components/card";
+@use "components/show-detail";
+@use "components/variables";

@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+body {
+  font-family: v.$font-main;
+  background-color: v.$bg-dark;
+  color: v.$text-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  color: v.$light-blue;
+  text-decoration: none;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}

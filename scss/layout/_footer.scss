@@ -1,0 +1,17 @@
+@use "variables" as v;
+
+.product {
+  background-color: v.$dark-blue;
+  border: 2px solid v.$light-blue;
+}
+
+.footer {
+  background-color: v.$dark-blue;
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid v.$light-blue;
+
+  p {
+    font-size: 0.9rem;
+  }
+}

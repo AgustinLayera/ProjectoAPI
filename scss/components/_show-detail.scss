@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+.product {
+  background-color: v.$dark-blue;
+  border: 2px solid v.$light-blue;
+}
+
+.show-detail {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+
+  img {
+    max-width: 300px;
+    border-radius: v.$radius;
+  }
+
+  p {
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+}
